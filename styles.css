@@ -4,24 +4,84 @@
 
 body {
   background-color: beige;
-  margin: 0 5px;
+  margin: 0;
 }
 
+/* This is for the NavBar */
 nav {
   background-color: orange;
   margin: auto 0;
   padding: 10px;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-links {
+  font-size: large;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  margin-left: 20px;
+}
+
+main a {
+  color: black;
+  font-size: large;
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* This is for the Main content */
+main {
+  margin: auto 20px;
 }
 
 h1 {
   text-align: center;
 }
 
-img {
-  width: 500px;
-  height: auto;
+.img-container {
+  display: flex;
+  justify-content: center;
 }
 
+.img-container img {
+  width: 500px;
+  height: auto;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.description {
+  width: 550px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.description.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* This is for the Footer */
+footer {
+  margin-top: 50px;
+}
+
+.home {
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+}
